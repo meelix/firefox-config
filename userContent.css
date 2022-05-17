@@ -158,6 +158,10 @@
         color: var(--firefox-paper) !important;
         border: 0 !important;
     }
+    tp-yt-paper-button.ytd-subscribe-button-renderer:hover, tp-yt-paper-button.ytd-subscribe-button-renderer:focus, tp-yt-paper-button.ytd-subscribe-button-renderer:active {
+        background-color: var(--firefox-ink-darker);
+    }
+
 
     .ryd-tooltip-bar-container {
         display: none;
