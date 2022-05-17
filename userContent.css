@@ -87,6 +87,48 @@
     }
 }
 
+@-moz-document url-prefix("chrome://devtools/content/") {
+    /* * { color: orange !important; } */
+    :root {
+      --theme-body-font-size: 13px !important;
+      --theme-code-font-size: 13px !important;
+    }
+    :root.theme-dark {
+        --theme-tab-toolbar-background: #333344 !important;
+        --theme-highlight-green: #b8bb26 !important;
+        --theme-highlight-blue: #83a598 !important;
+        --theme-highlight-purple: #d3869b !important;
+        --theme-highlight-red: #fb4934 !important;
+        --theme-highlight-yellow: #fabd2f !important;
+        --theme-highlight-bluegrey: #5e88b0 !important;
+        --theme-highlight-lightorange: #fd8019 !important;
+        --theme-highlight-orange: #d65d0e !important;
+        /* --theme-highlight-pink: #df80ff !important; -- */
+        --theme-highlight-gray: #ebdbb2 !important;
+        --theme-focus-outline-color: #fbf1c7 !important;
+        --theme-graphs-purple: #df80ff !important;
+        --theme-graphs-yellow: #d99b28 !important;
+        --theme-graphs-orange: #d96629 !important;
+        --theme-graphs-grey: #757873 !important;
+        --theme-graphs-full-red: #fb4934 !important;
+        
+        --grey-20: #EBEBEC !important;
+        --grey-25: #D6D6DA !important;
+        --grey-30: #C2C2C7 !important;
+        --grey-35: #ADADB4 !important;
+        --grey-40: #9999A2 !important;
+        --grey-43: #85858F !important;
+        --grey-45: #70707C !important;
+        --grey-50: #5C5C69 !important;
+        --grey-55: #474757 !important;
+        --grey-60: #333344 !important;
+        --grey-70: #2E2E3D !important;
+        --grey-80: #292936 !important;
+        --grey-85: #1F1F29 !important;
+        --grey-90: #14141B !important;
+    }    
+}
+
 @-moz-document domain("youtube.com") {
     :root {
         --yt-spec-brand-button-background: var(--firefox-ink) !important;
@@ -121,7 +163,29 @@
         display: none;
     }
 
+    #masthead,
+    ytd-watch-flexy[flexy][is-two-columns_] #columns.ytd-watch-flexy,
+    .html5-video-container {
+        background: var(--firefox-paper) !important;
+    }
 
+    #container.ytd-searchbox {
+        background-color: #292936 !important;
+    }
+    .ytp-gradient-bottom {
+        background: linear-gradient(0deg, rgba(51,51,68,1) 0%, rgba(51,51,68,0) 100%) !important;
+    }
+
+    #voice-search-button {
+        display: none !important;
+    }
+
+    #guide-content.ytd-app {
+        background: #1A1A22 !important;
+    }
+    .ytp-swatch-background-color {
+        background-color: var(--firefox-ink) !important;
+    }
 
     /*===ROOT===*/
     html[dark="true"]:root {
