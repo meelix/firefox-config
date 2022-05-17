@@ -106,6 +106,16 @@
     circle[fill=red] {
         fill: var(--firefox-ink) !important;
     }
+    
+    #logo path[fill="white"] {
+        fill: var(--firefox-paper) !important
+    }
+
+    tp-yt-paper-button.ytd-subscribe-button-renderer,
+    .yt-spec-icon-badge-shape--type-notification .yt-spec-icon-badge-shape__badge {
+        color: var(--firefox-paper) !important;
+        border: 0 !important;
+    }
 
     .ryd-tooltip-bar-container {
         display: none;
