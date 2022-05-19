@@ -132,6 +132,10 @@
 @-moz-document domain("youtube.com") {
     :root {
         --yt-spec-brand-button-background: var(--firefox-ink) !important;
+        --yt-spec-static-brand-red: var(--firefox-ink) !important;
+        --yt-spec-general-background-a: #2E2E3D !important;
+        --yt-spec-brand-background-primary: #2E2E3D !important;
+        --yt-spec-brand-background-solid: #2E2E3D !important;
     }
 
     html #logo-icon svg>g>g:first-child>path:first-child,
@@ -243,6 +247,10 @@
     ytd-toggle-button-renderer.force-icon-button a.ytd-toggle-button-renderer,
     a.yt-simple-endpoint.ytd-toggle-button-renderer {
         outline: none;
+    }
+    
+    .yt-chip-cloud-renderer:before {
+        filter: brightness(0) saturate(100%) invert(14%) sepia(25%) saturate(541%) hue-rotate(201deg) brightness(101%) contrast(89%);
     }
 
     /*===Lined===*/
